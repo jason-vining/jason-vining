@@ -1,26 +1,28 @@
 # Jason Vining
 
-Petroleum engineer — drilling, completions, production. HP/HT horizontal and conventional wells, mostly gas. Haynesville, Bossier Shales, Delaware Basin; conventional fields in Mid-Con, Permian, S. Texas, N. LA, MS.
+Petroleum engineer building with Claude Code. It started with tools for my day job and grew into apps and mixed reality games for my kids. Most of it is rough around the edges but in daily use. Public repos run on simulated data, so you can try them.
 
-I build agentic-AI tooling for oil & gas operations, from inside the work rather than as a vendor. Most E&P engineers haven't yet seen what these tools can do in real ops — this is me figuring it out in all operational aspects of E&P field and sharing what holds up.
+**Oil and gas · Apps · Games · How I build**
 
-### What you'll find here
+## Oil and gas
+- **Daily production report:** reads well data every morning, flags wells drifting off trend, and emails the ops team a plain-language review with charts.
+- **Live frac tracking:** turns field chat and service reports into stage-by-stage status, cost, and pace.
+- **3D drilling models:** directional surveys and live drilling data, plotted in 3D.
+- **Mapping and planning:** geologic maps, pad siting, and cost lookbacks.
 
-- Drilling surveillance tools, tying real-time drilling data sources and directional surveys into 3D models
-- Completions prep tools, torque and drag modeling, procedures, and building/modifying wellbore schematics
-- Production-engineering AI workflows — artificial lift optimization, production troubleshooting, daily-review automation, and sharpening operate-by-exception workflows
-- Claude Code infrastructure for E&P — agent setups, memory/feedback patterns, workflow tooling
-- Tools for in-depth LOS analysis and AFE lookbacks
+## Apps
+- **Assistant:** a planner that scans my email, Teams, and Claude Code sessions and tells me what needs attention next.
+- **File Finder:** a faster way to browse and search SharePoint, no local sync. Used daily.
 
-Most of this is early and operationally tested, not polished product. Starting points and patterns, meant to be adapted to your own wells and tuned with your own feedback loops — not drop-in solutions.
+## Games
+- **Splash Lab:** spray fluids onto your real room and watch them turn into creatures, weather, and ponds. Mixed reality for Meta Quest 3, no PC needed. Started as a game for my kids. Demo and full game coming soon.
+- **Stormborn:** a roguelite where creatures break through your walls.
 
-### Areas
+## How I build
+I'm not a software engineer. I bring 17 years of drilling, completions, and production experience; Claude Code writes the code.
 
-\`artificial-lift\` · \`production-engineering\` · \`drilling\` · \`drilling-surveillance\` · \`completions\` · \`wellbore-schematics\` · \`torque-and-drag\` · \`well-cost\` · \`los-analysis\` · \`claude-code\` · \`agentic-ai\` · \`haynesville\` · \`oil-and-gas\`
+- **One orchestrator, many agents:** a main session splits big jobs across subagents, including drilling, completions, and production engineer agents.
+- **Report, don't diagnose:** I rebuilt the production report once because it drifted into guessing at causes. If even 5-10% of a report is wrong, readers stop trusting all of it.
+- **CLAUDE.md and change logs:** every main project folder has both so a fresh session picks up where the last one left off.
 
-### Connect
-
-- LinkedIn: [linkedin.com/in/jason-vining](https://www.linkedin.com/in/jason-vining/)
-- X: [@jasonvining_ai](https://x.com/jasonvining_ai)
-
-Open to feedback, comparing approaches, and hearing how others are bringing AI into E&P workflows.
+Few people in oil and gas build with AI from inside real operations. If you're working on something similar, in any industry, or want to talk about any of this, reach out on X: [@jasonvining_ai](https://x.com/jasonvining_ai) or LinkedIn: [jason-vining](https://www.linkedin.com/in/jason-vining)
